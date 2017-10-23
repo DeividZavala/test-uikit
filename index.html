@@ -10,6 +10,13 @@
 </head>
 <body>
 
+    <!--
+     Este fue copiado completo de uikit puedes hacer que siempre este presente
+     en la parte superior del sitio  o que se haga transparente
+     con una clase que igual te da uikit.
+
+     Incluso que tenga otros estilos cuando el usuario hace scroll.
+     -->
     <header>
         <nav class="uk-navbar-container" uk-navbar>
             <div class="uk-navbar-left">
@@ -25,10 +32,12 @@
     <main>
         <section class="video-container">
 
+            <!-- Video de fonde, de este el secreto esta en el css, todo esta en styles.css -->
             <video class="video-background" autoPlay loop muted>
                 <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
             </video>
 
+            <!-- Contenedor para oscurecer el video y que no tape las letras o lo que quieras poner -->
             <div class="overlay"></div>
 
             <div class="uk-flex uk-flex-center uk-flex-middle" style="height: 100vh;">
@@ -39,6 +48,18 @@
 
         <section class="uk-section-small">
             <div class="uk-container">
+                <!--
+                Basicamente con el grid de uikit puedes hacer lo que sea
+                en este caso va a poner todos los contenedores que esten dentro del
+                elemento con "uk-grid" juntos pero jugando con las clases puedes hacer
+                que solo ponga 3 o los que necesites
+
+                ejemplo:
+
+                cambiando el "uk-child-width-expand@s" por "uk-child-width-1-3" unicamente
+                tendrias 3 elementos por renglon.
+
+                -->
                 <div class="uk-child-width-expand@s uk-text-center" uk-grid>
                     <div>
                         <div><span class="uk-margin-small-right" uk-icon="icon: check; ratio: 3"></span></div>
